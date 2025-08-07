@@ -1,0 +1,52 @@
+RACE Integrity Primitives Evaluation Message Digest (RIPEMD) is a 160-bit hash algorithm developed by Hans Dobbertin, Antoon Bosselaers, and Bart Preneel. 
+
+There exist 128-, 256-, and 320-bit versions of this algorithm, called RIPEMD-128, RIPEMD-256, and RIPEMD-320, respectively. 
+
+These algorithms replace the original RIPEMD, which was found to have a collision issue. They do not follow any standard security policies or guidelines
+
+RIPEMD-160 is a more secure version of the RIPEMED algorithm. In this algorithm, the compression function consists of 80 stages, i.e., 5 blocks that execute 16 times each.
+
+This process repeats twice by combining the results at the bottom using modulo 32 addition
+
+
+
+
+HMAC
+Hash-based message authentication code (HMAC) is a type of message authentication code
+
+(MAC) that uses a cryptographic key along with a cryptographic hash function. It is widely used to verify the integrity of data and authentication of a message.
+
+This algorithm includes an embedded hash function such as SHA-1 or MD5. The strength of HMAC depends on the embedded hash function, key size, and size of the hash output.
+  
+HMAC includes two stages for computing the hash. The input key is processed to produce two keys, namely the inner key and the outer key. 
+
+The first stage of the algorithm inputs the inner key and message to produce an internal hash. 
+
+The second stage of the algorithm inputs the output from the first stage and outer key, and produces the final HMAC code. 
+
+As HMAC executes the underlying hash function twice, it offers protection against various length extension attacks.
+  
+The size of the key and the output depends on the embedded hash function; e.g., 128 or 160 bits in the case of MD5 or SHA-1, respectively
+
+
+
+GOST – Hash Function
+
+This hash algorithm was initially defined in the Russian national standard GOST R 34.11-94 “Information Technology - Cryptographic Information Security - Hash Function.”
+
+It produces a fixed-length output of 256 bits. The input message is broken up into chunks of 256-bit blocks. 
+
+If a block is less than 256 bits, then the message is padded by appending as many zeros to it as are required to make the length of the message 256 bits.
+
+The remaining bits are filled with a 256-bit integer arithmetic sum of all previously hashed blocks.
+
+Then, a 256-bit integer representing the length of the original message, in bits, is produced
+
+
+
+
+
+
+
+
+
