@@ -1,0 +1,62 @@
+The Advanced Encryption Standard (AES) is a National Institute of Standards and Technology (NIST) specification for the encryption of electronic data.
+
+It also helps to encrypt digital information such as telecommunications, financial, and government data. US government agencies have been using it to secure sensitive but unclassified material. 
+
+AES consists of a symmetric-key algorithm: both encryption and decryption are performed using the same key. 
+
+It is an iterated block cipher that works by repeating the defined steps multiple times. 
+
+It has a 128-bit block size, with key sizes of 128, 192, and 256 bits for AES-128, AES-192, and AES-256, respectively. 
+
+The design of AES makes its use efficient in both software and hardware. It works simultaneously at multiple network layers
+
+
+AES Pseudocode
+Initially, the system copies the cipher input into the internal state and then adds an initial round key.
+
+The system transforms the state by iterating a round function in a number of cycles.
+
+The number of cycles may vary with the block size and key length. After completing rounding, the system copies the final state into the cipher output.
+
+
+
+▪ RC4 
+
+RC4 is a variable key-size symmetric-key stream cipher with byte-oriented operations, and it is based on the use of a random permutation. 
+
+According to some analyses, the period of the cipher is likely to be greater than 10,100. 
+
+Each output byte uses 8 to 16 system operations; thus, the cipher can run fast when used in software. 
+
+RC4 enables safe communications such as for traffic encryption (which secures websites) and for websites that use the SSL protocol
+
+
+
+▪ RC5
+
+RC5 is a fast symmetric-key block cipher designed by Ronald Rivest for RSA Data Security (now RSA Security).
+
+The algorithm is a parameterized algorithm with a variable block size, a variable key size, and a variable number of rounds. 
+
+The block sizes can be 32, 64, or 128 bits. The range of the rounds can vary from 0 to 255, and the size of the key can vary from 0 to 2,040 bits.
+
+This built-in variability can offer flexibility at all levels of security. The routines used in RC5 are key expansion, encryption, and decryption.
+
+In the key expansion routine, the secret key that a user provides is expanded to fill the key table (the size of which depends on the number of rounds). 
+
+RC5 uses a key table for both encryption and decryption. The encryption routine has three fundamental operations: integer addition, bitwise XOR, and variable rotation.
+
+The intensive use of data-dependent rotation and the combination of different operations make RC5 a secure encryption algorithm
+
+
+
+▪ RC6
+RC6 is a symmetric-key block cipher derived from RC5.
+
+It is a parameterized algorithm with a variable block size, key size, and number of rounds. 
+
+Two features that differentiate RC6 from RC5 are integer multiplication (which is used to increase the diffusion, 
+achieved in fewer rounds with increased speed of the cipher) and the use of four 4-bit working registers rather than two 2-bit registers.
+
+RC6 uses four 4-bit registers instead of two 2-bit registers because the block size of the AES is 128 bits
+
