@@ -1,0 +1,53 @@
+Blowfish is a type of symmetric block cipher algorithm designed to replace DES or IDEA algorithms. 
+
+It uses the same secret key to encrypt and decrypt data. This algorithm splits the data into a block length of 64 bits and produces a key ranging from 32 bits to 448 bits. 
+
+Due to its high speed and overall efficiency, blowfish is used in software ranging from password protection tools to e-commerce websites for securing payments.
+
+It is a 16-round Feistel cipher working on 64-bit blocks. However, unlike DES, its key size ranges from 32 bits to 448 bits.
+
+This algorithm has two parts. The first part handles the expansion of the key. The second part actually encrypts the data. 
+
+The key expansion is handled in several steps.
+The first step is to break the original key into a set of subkeys. 
+
+Specifically, a key of no more than 448 bits is separated into 4,168 bytes. 
+
+There is a P-array and four 32-bit S-boxes. 
+
+The P-array contains 18 32-bit subkeys, while each S-box contains 256 entries
+
+The round function splits the 32-bit input into four 8-bit quarters and uses the quarters as input to the S-boxes. The outputs are added modulo 2^32 and XORed to produce the final 32-bit output
+
+
+
+Twofish
+The Twofish algorithm was one of the U.S. Government’s five finalists to replace DES, but it was not chosen. 
+
+It was designed by Bruce Schneier, John Kelsey, Doug Whiting, David Wagner, Chris Hall, and Niels Ferguson.
+
+TwoFish is a 128-bit block cipher. It is one of the most conceptually simple algorithms that uses a single key for both encryption and decryption for any length up to 256 bits.
+
+It is a Feistel cipher. It not only works fast for CPU or hardware but is also flexible for network-based applications.
+
+Furthermore, it allows various levels of performance trade-off on parameters such as encryption speed, hardware gate count, memory usage, etc. 
+
+This technique of enabling different implementations improves the relative performance of the algorithm. Any user can optimize the performance based on the key scheduling
+
+
+
+Threefish
+Threefish was developed in 2008 and it is a part of the Skein algorithm. 
+
+It was enrolled in NIST’s SHA-3 (hash function) contest.
+
+It is a large tweakable symmetric-key block cipher in which the block and key sizes are equal, i.e., 256, 512, and 1024. 
+
+Threefish involves only three operations, i.e., ARX (addition-rotation-XOR), which makes the coding simple, and all these operations work on 64-bit words. 
+
+Threefish blocks 256, 512, and 1024 involve 72, 72, and 80 rounds of computations, respectively, to achieve the final security goal. 
+
+This algorithm does not use S-boxes to prevent cache timing attacks.
+
+
+
