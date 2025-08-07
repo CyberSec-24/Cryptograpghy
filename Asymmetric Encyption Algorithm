@@ -1,0 +1,113 @@
+DSA and Related Signature Schemes The Digital Signature Algorithm (DSA) is a Federal Information Processing Standard for digital signatures. 
+
+The NIST proposed the DSA for use in the Digital Signature Standard (DSS), adopted as FIPS 186. 
+
+The DSA helps in the generation and verification of digital signatures for sensitive and unclassified applications. 
+
+It creates a 320-bit digital signature with 512–1024-bit security. A digital signature is a mathematical scheme used for the authentication of digital messages.
+
+Computation of the digital signature uses a set of rules (i.e., the DSA) and a set of parameters in that the user can verify the identity of the signatory and the integrity of the data
+
+
+Processes involved in DSA: 
+▪ Signature Generation Process: The private key is used to know who has signed it. 
+▪ Signature Verification Process: The public key is used to verify whether the given digital signature is genuine.
+
+DSA is a public-key cryptosystem, as it involves the use of both private and public keys.
+
+Benefits of DSA:
+▪ Less chances of forgery compared with a written signature
+▪ Quick and easy method of business transactions 
+▪ Fake currency problem can be mitigated considerably
+
+
+
+Rivest Shamir Adleman (RSA)
+Ron Rivest, Adi Shamir, and Leonard Adleman formulated RSA, a public-key cryptosystem for Internet encryption and authentication.
+
+RSA uses modular arithmetic and elementary number theories to perform computations using two large prime numbers. 
+
+The RSA system is widely used in a variety of products, platforms, and industries. It is one of the de-facto encryption standards. 
+
+Companies such as Microsoft, Apple, Sun, and Novell build RSA algorithms into their operating systems.
+
+RSA can also be found on hardware-secured telephones, Ethernet network cards, and smart cards
+
+An example of how cryptography uses RSA algorithms in a practical interchange is illustrated by the following sequence:
+1. The sender of a message encrypts it using a randomly chosen DES symmetric key. 
+DES (Data Encryption Standard) is a relatively insecure symmetric-key system using 64-bit encryption (56 bits for key size, 8 bits for cyclic redundancy check) to encrypt data.
+
+2. The sender will then look up the recipient’s public key and use it to encrypt the DES key using the RSA system.
+
+3. The sender transmits an RSA digital envelope, consisting of a DES-encrypted message and an RSA-encrypted DES key, to the recipient.
+
+4. The recipient will decrypt the DES key and then use the DES key to decrypt the message itself.
+
+
+
+RSA Signature Scheme 
+Cryptography uses RSA for public key encryption and for a digital signature (to sign a message and verify it). 
+
+The RSA signature scheme is the first technique used to generate digital signatures.
+
+It is a deterministic digital signature scheme that provides message recovery from the signature itself, making it the most practical and versatile technique available. 
+
+RSA involves both a public key and a private key. The public key, as the name indicates, can be used by anyone for encrypting messages. 
+
+The messages that the user encrypts with the public key require the private key for decryption
+
+
+
+Diffie–Hellman
+It is a cryptographic protocol that allows two parties to establish a shared key over an insecure channel. 
+
+It was developed and published by Whitfield Diffie and Martin Hellman in 1976. 
+
+Actually, it was independently developed a few years earlier by Malcolm J. Williamson of the British Intelligence Service, but it was classified at that time
+
+Diffie–Hellman Algorithm The system has two parameters called p and g 
+▪ Parameter p is a prime number 
+
+▪ Parameter g (usually called a generator) is an integer less than p, with the following property: 
+for every number n between 1 and p-1 (both inclusive), there is a power k of g such that n = g kmod p
+
+
+
+Elliptic Curve Cryptography (ECC) 
+ECC is a modern public-key cryptography developed to avoid larger cryptographic key usage. 
+
+The asymmetric cryptosystem depends on number theory and mathematical elliptic curves (algebraic structure) to generate short, quick, and robust cryptographic keys. 
+
+RSA is an incumbent public-key algorithm, but its key size is large. The speed of the encryption always depends on the key size: a smaller key length allows faster encryption.
+
+To minimize the key size, elliptic curve cryptography has been proposed as a replacement for the RSA algorithm
+
+While RSA uses a key size of 1024 to encrypt the data, ECC provides equal security with a comparatively smaller key size ranging between 160 to 223. For high-level computing,
+
+RSA uses a key size of 7680 to implement security, whereas ECC can provide the same level of security with a key size ranging between 384 to 511.
+
+
+
+YAK
+YAK is a public-key-based Authenticated Key Exchange (AKE) protocol. 
+
+The authentication of YAK is based on public key pairs, and it needs PKI to distribute authentic public keys.
+
+YAK is a variant of the two-pass Hashed Menezes‐Qu‐Vanstone (HMQV) protocol using zero‐knowledge proofs (ZKP) for proving the knowledge of ephemeral secret keys from both parties.
+
+The YAK protocol lacks joint key control and perfect forward secrecy attributes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
