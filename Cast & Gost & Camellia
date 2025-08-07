@@ -1,0 +1,50 @@
+CAST-128, also called CAST5, is a symmetric-key block cipher having a classical 12-or 16-round Feistel network with a block size of 64 bits. 
+
+CAST-128 uses a key size varying from 40 bits to 128 bits in 8-bit increments. 
+
+The CAST-128 components include large 8×32-bit S-boxes (S1, S2, S3, S4) based on bent functions, modular addition and subtraction, key-dependent rotation, and XOR operations. 
+
+CAST-128 uses a masking key (Km1) and a rotation key (Kr1) for performing its functions. 
+
+The round function consists of three alternating types to perform addition, subtraction, or XOR operations in different stages.
+
+It used as a default cipher in GPG (GNU Privacy Guard) and PGP (Pretty Good Privacy).
+
+CAST-256 is an extension of CAST-128 that uses the same design procedure. CAST-256 has a 128-bit block size and uses key sizes varying from 128 to 256 bits. 
+
+Furthermore, it uses zero-correlation cryptanalysis, which can break 28 rounds with time = 2246.9 and data = 298.8
+
+
+
+GOST 
+Block Cipher The GOST (Government Standard) block cipher, also called Magma, is a symmetric-key block cipher having a 32-round Feistel network working on 64-bit blocks with a 256-bit key length.
+
+It consists of an S-box that can be kept secret and it contains around 354 bits of secret information.
+
+GOST is a simple encryption algorithm, where the round function 32-bit subkey modulo 2^32 is added and put in the layer of S-boxes and the rotate left shift operation is used for shifting 11 bits, thereby providing the output of the round function
+
+The key scheduling of the GOST block cipher is performed by breaking the 256-bit key into eight 32-bit subkeys, where each subkey is used four times. 
+
+In this algorithm, the key words are used in order for the first 24 rounds and they are used in reverse order for the last 8 rounds.
+
+Kuznyechik is the latest extension of GOST, which uses 128-bit blocks
+
+
+
+Camellia 
+Camellia is a symmetric-key block cipher having either 18 rounds (for 128-bit keys) or 24 rounds (for 256-bit keys). 
+
+It is a Feistel cipher with a block size of 128 bits and a key size of 128, 192, and 256 bits.
+
+Camellia uses four 8×8-bit S-boxes that perform affine transformations and logical operations. 
+
+A logical transformation layer FL-function or its inverse is applied every six rounds. Camellia uses the key whitening technique for increased security. 
+
+Camellia is a part of the Transport Layer Security (TLS) protocol, which is used to deliver secure communication. 
+
+Camellia cannot be brute-forced even with the latest technology although it uses a smaller key size of 128 bits, thus making it a safe cipher.
+
+In addition, Camellia offers high security and its processing skills are equivalent to those of AES or Rijndael
+
+
+
