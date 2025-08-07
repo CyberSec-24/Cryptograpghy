@@ -1,0 +1,42 @@
+DES is a standard for data encryption that uses a secret key for both encryption and decryption (symmetric cryptosystem). 
+
+DES uses a 64-bit secret key, of which 56 bits are generated randomly and the other 8 bits are used for error detection. 
+
+It uses a data encryption algorithm (DEA), a secret key block cipher employing a 56-bit key operating on 64-bit blocks. 
+
+DES is the archetypal block cipher—an algorithm that takes a fixed-length string of plaintext bits and transforms it into a ciphertext bit string of the same length. 
+
+The design of DES allows users to implement it in hardware and use it for single-user encryption, such as to store files on a hard disk in encrypted form
+
+
+
+Triple Data Encryption Standard (3DES)
+
+Eventually, it became obvious that DES would no longer be secure. 
+
+The U.S. Federal Government began a contest seeking a replacement cryptography algorithm. 
+
+However, in the meantime, 3DES was created as an interim solution. 
+
+Essentially, it performs DES three times with three different keys. 
+
+3DES uses a “key bundle” that comprises three DES keys, K1, K2, and K3. Each key is a standard 56-bit DES key. 
+
+It then performs the following process:
+DES encrypt with K1, DES decrypt with K2, DES encrypt with K3
+
+There are three options for the keys. In the first option, all three keys are independent and different. 
+
+In the second option, K1 and K3 are identical. 
+
+In the third option, all three keys are the same; therefore, you are literally applying the same DES algorithm three times with the same key.
+
+The first option is the most secure, while the third is the least secure
+
+
+
+
+
+
+
+
