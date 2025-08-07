@@ -27,4 +27,29 @@ The number of rounds should be even since they are implemented in pairs called c
 
 TEA uses a 128-bit key operating on a 64-bit block. It also uses a constant that is defined as 232/the golden ratio. 
 
-This constant is referred to as delta, and in each round, a multiple of delta
+This constant is referred to as delta, and in each round, a multiple of delta is used. 
+
+The 128-bit key is split into four different 32-bit subkeys labeled K[0], K[1], K[2], and K[3]. 
+
+Instead of using the XOR operation, TEA uses addition and subtraction, but with mod 232. 
+
+The block is divided into two halves, R and L. R is processed through the round function.
+
+The round function takes the R half and performs a left shift of 4. 
+
+Then, the result of this operation is added to K[0]. Next, the result of this operation is added to delta (recall that delta is the current multiple of 232/the golden ratio). 
+
+The result of this operation is then shifted right by 5 and added to K[1]. This is the round function. 
+
+As with all Feistel ciphers, the result of the round function is XORed with L, and L and R are then swapped for the next round
+
+
+
+
+
+
+
+
+
+
+
