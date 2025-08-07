@@ -1,0 +1,64 @@
+MD2, MD4, MD5, and MD6 are message digest algorithms used in digital signature applications to compress a document securely before the system signs it with a private key.
+
+The algorithms can be of variable length, but the resulting message digest always has a size of 128 bits
+
+The structures of all three algorithms (MD2, MD4, and MD5) appear similar, although the design of MD2 is reasonably different from that of MD4 and MD5.
+
+MD2 supports 8-bit machines, while MD4 and MD5 support 32-bit machines.
+
+The algorithm pads the message with extra bits to ensure that the number of bits is divisible by 512. The extra bits may include a 64-bit binary message.
+
+Attacks on versions of MD4 have become increasingly successful.
+
+Research has shown how an attacker launches collision attacks on the full version of MD4 within a minute on a typical PC. 
+
+MD5 is slightly more secure but is slower than MD4. However, both the message digest size and the padding requirements remain the same. 
+
+MD5 is a widely used cryptographic hash function that takes a message of arbitrary length as input and outputs a 128-bit (16-byte) fingerprint or message digest of the input. 
+
+MD5 can be used in a wide variety of cryptographic applications and is useful for digital signature applications, file integrity checking, and storing passwords. 
+
+However, MD5 is not collision-resistant; therefore, it is better to use the latest algorithms, such as MD6, SHA-2, and SHA-3
+
+MD6 uses a Merkle-tree-like structure to allow for large-scale parallel computation of hashes for very long inputs. It is resistant to differential cryptanalysis attacks. 
+
+To calculate the effectiveness of hash functions, check the output produced when the algorithm randomizes an arbitrary input message
+
+
+QuickHash-GUI is a graphical interface data hashing tool for Linux, Windows, and macOS. 
+
+The tool is capable of hashing segments of text or dynamic hashing as you type into the text field
+
+
+
+
+The NIST has developed the Secure Hash Algorithm (SHA), specified in the Secure Hash Standard (SHS) and published as a federal information-processing standard (FIPS PUB 180). 
+
+It generates a cryptographically secure one-way hash. Rivest developed the SHA, which is similar to the message digest algorithm family of hash functions. 
+
+It is slightly slower than MD5, but its larger message digest makes it more secure against brute-force collision and inversion attacks. 
+
+SHA encryption is a series of five different cryptographic functions, and it currently has three generations: SHA-1, SHA-2, and SHA-3
+
+▪ SHA-0: A retronym applied to the original version of the 160-bit hash function published
+in 1993 under the name SHA, which was withdrawn from trade due to an undisclosed “significant flaw” in it. It was replaced with a slightly revised version, namely SHA-1.
+
+▪ SHA-1: It is a 160-bit hash function that resembles the former MD5 algorithm developed by Ron Rivest. 
+It produces a 160-bit digest from a message with a maximum length of (264 − 1) bits. 
+It was designed by the National Security Agency (NSA) to be part of the Digital Signature Algorithm (DSA). 
+It is most commonly used in security protocols such as PGP, TLS, SSH, and SSL.
+As of 2010, SHA-1 is no longer approved for cryptographic use because of its cryptographic weaknesses.
+
+▪ SHA-2: SHA2 is a family of two similar hash functions with different block sizes, namely SHA-256, which uses 32-bit words, and SHA-512, which uses 64-bit words. 
+The truncated versions of each standard are SHA-224 and SHA-384.
+
+▪ SHA-3: SHA-3 uses sponge construction in which message blocks are XORed into the initial bits of the state, which the algorithm then invertibly permutes. 
+It supports the same hash lengths as SHA-2 but differs in its internal structure considerably from the rest of the SHA family
+
+
+
+
+
+
+
+
