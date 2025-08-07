@@ -11,12 +11,32 @@ To compare this MD5 digest with another, one can paste the other value into the 
 Obviously, an equal to sign (“=”) appears between the two values if they are equal; otherwise, the less than (“<”) or greater than (“>”) sign will tell you that the values are different
 
 
+Multilayer Hashing Calculators
+Multilayer hashing, also known as nested hashing or recursive hashing, is a technique in which a hash function is applied multiple times to the input or output of a previous hash operation.
+
+This approach can enhance the security and create more complex hash structures. Tools such as CyberChef can be used to perform multilayer hashing. 
+
+This multilayer hashing process can make it more difficult for attackers to reverse engineer the original input data from the hash value, as it adds an additional layer of complexity, which makes brute-force attacks more challenging
 
 
+Working of Multilayer Hashing 
+▪ Initial Hashing: The original input data (e.g., a message or file) are hashed using a cryptographic hash function such as SHA-256, SHA-3, or MD5. 
+The result is a fixed-size hash value that is typically a string of characters.
+
+▪ Subsequent Hashing: The hash value obtained from the initial hashing step is again hashed using the same or different hash functions. 
+This process can be repeated several times to create multiple hashing layers.
+
+▪ Final Hash Value: After a predetermined number of hashing iterations, the final hash value is obtained.
+This value is used as the final output of the multilayer hashing process
 
 
+Steps to Perform Multilayer Hashing Using CyberChef 
+▪ Step 1: Create a sample file and open the CyberChef (https://gchq.github.io/CyberChef). 
 
+▪ Step 2: Click on the "Open file as input" option to upload the sample file
 
+▪ Step 3: Search for the desired hashing algorithm in the Operations panel (e.g., MD5), and drag and drop it into the Recipe panel. The output is shown in the Output panel.
 
+▪ Step 4: Using the MD5 hash value as the input, select another hashing algorithm (e.g., SHA1) and drag and drop it into the Recipe panel.
 
-
+▪ Step 5: Based on these requirements, select another hashing algorithm using the output of the SHA1 hash as the input and perform hashing recursively, as shown in the screenshot
