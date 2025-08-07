@@ -1,0 +1,22 @@
+MD5 Calculator is a simple application that calculates the MD5 hash of a given file. 
+
+It can be used with large files (e.g., several gigabytes in size). It features a progress counter and a text field from which the final MD5 hash can be easily copied to the clipboard. 
+
+MD5 Calculator can be used to check the integrity of a file. It allows you to calculate the MD5 hash value of the selected file. 
+
+Right-click the file and choose "MD5 Calculator;" the program will calculate the MD5 hash. The MD5 Digest field contains the calculated value. 
+
+To compare this MD5 digest with another, one can paste the other value into the Compare To field.
+
+Obviously, an equal to sign (“=”) appears between the two values if they are equal; otherwise, the less than (“<”) or greater than (“>”) sign will tell you that the values are different
+
+
+
+
+
+
+
+
+
+
+
