@@ -1,0 +1,30 @@
+Like Blowfish, Serpent is a symmetric-key block cipher that was a finalist in the AES contest. 
+
+This algorithm was designed by Ross Anderson, Eli Biham, and Lars Knudsen.
+
+It uses a 128-bit symmetric block cipher with key sizes of 128, 192, or 256 bits. 
+
+It can be integrated into software or hardware programs without any restrictions. 
+
+Serpent involves 32 rounds of computational operations that include substitution and permutation operations on four 32-bit word blocks using 8-variable S-boxes with 4-bit entry and 4-bit exit. 
+
+All S-boxes work parallelly 32 times. 
+
+Although, Serpent is one of the most secure encryption mechanisms in AES contests, researchers have chosen Rijndael over Serpent due to its moderate encryption speed (owing to the number of rounds it uses) and complexity. 
+
+Serpent minimizes the correlation between encoded images or plaintexts to a greater extent compared to Twofish and Rijndael.
+
+Therefore, Rijndael is the stand-out AES competitor and is now being used as AES
+
+
+
+TEA
+The tiny encryption algorithm (TEA) was created by David Wheeler and Roger Needham, and it was publicly presented for the first time in 1994. 
+
+It is a simple algorithm, easy to implement in code. It is a Feistel cipher that uses 64 rounds (note that this is a suggestion; it can be implemented with fewer or more rounds). 
+
+The number of rounds should be even since they are implemented in pairs called cycles.
+
+TEA uses a 128-bit key operating on a 64-bit block. It also uses a constant that is defined as 232/the golden ratio. 
+
+This constant is referred to as delta, and in each round, a multiple of delta
