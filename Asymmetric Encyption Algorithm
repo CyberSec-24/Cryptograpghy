@@ -99,7 +99,29 @@ The YAK protocol lacks joint key control and perfect forward secrecy attributes
 
 
 
+Message Digest (One-way Hash) Functions
 
+Hash functions calculate a unique fixed-size bit string representation, called a message digest, of any arbitrary block of information.
+
+Message digest functions distill the information contained in a file (small or large) into a single fixed-length number, typically between 128 and 256 bits. 
+
+If any given bit of the function’s input is changed, every output bit has a 50% chance of changing. 
+
+Given an input file and its corresponding message digest, it should be nearly impossible to find another file with the same message digest value, as it is computationally infeasible to have two files with the same message digest value.
+
+Message digest functions are also called one-way hash functions because they produce values that are nearly impossible to invert, resistant to attack, mostly unique, and widely distributed. 
+
+Message digest algorithms themselves do not participate in encryption and decryption operations.
+
+They allow the creation of digital signatures and message authentication codes (MACs) as well as the derivation of encryption keys from passphrases
+
+The main role of a cryptographic hash function is to provide integrity in document management. 
+
+Cryptographic hash functions are an integral part of digital signatures.
+
+They are relatively faster than digital signature algorithms; hence, their characteristic feature is to calculate the signature of the document’s hash value, which is smaller than the document. 
+
+In addition, digests help to hide the contents or source of the document.
 
 
 
