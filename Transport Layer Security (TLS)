@@ -1,0 +1,86 @@
+The Transport Layer Security (TLS) protocol is used to establish a secure connection between a client and a server and ensure the privacy and integrity of information during transmission. 
+
+It uses a symmetric key for bulk encryption, asymmetric key for authentication and key exchange, and message authentication codes for message integrity.
+
+It uses the RSA algorithm with strengths of 1024 and 2048 bits. Using TLS, one can reduce security risks such as message tampering, message forgery, and message interception. 
+
+An advantage of TLS is that it is independent of the application protocol. Higher-level protocols can lie on top of TLS transparently
+
+
+1. TLS Record Protocol The TLS Record Protocol is a layered protocol. 
+
+It provides secured connections with an encryption method such as DES. 
+
+It secures application data using the keys generated during the handshake and verifies its integrity and origin.
+
+The TLS Record Protocol provides connection security with two basic properties:
+
+o The connection is private: Uses symmetric cryptography for data encryption (e.g., DES). 
+The protocol generates unique keys for symmetric encryption for each connection, depending on a secret negotiated by another protocol (such as the TLS Handshake Protocol). 
+One can use the TLS Record Protocol without encryption.
+
+o The connection is reliable: It provides a message integrity check at the time of message transport using a keyed MAC.
+Secure hash functions (e.g., SHA, MD5) help to perform MAC computations
+
+
+
+2. TLS Handshake Protocol The TLS Handshake Protocol allows the client and server to authenticate each other and
+select an encryption algorithm and cryptographic keys prior to data exchange by the application protocol. It provides connection security with three basic properties:
+
+o The peer’s identity can be authenticated using asymmetric cryptography. This can be made optional but is mostly required for at least one of the peers.
+
+o The negotiation of a shared secret is secure. o The negotiation is reliable.
+
+The TLS Handshake Protocol operates on top of the TLS Record Protocol and is responsible for producing cryptographic parameters of the session state. 
+
+At the start of communication, the TLS client and server agree on a protocol version, select cryptographic algorithms, optionally authenticate each other, and use asymmetric cryptography techniques to create shared secret0s.
+
+
+The steps involved in the TLS Handshake Protocol are as follows: 
+▪ Initially, the client sends a “Client hello” message accompanied by the client’s random value and supported cipher suites to the server.
+
+▪ The server responds to the client by sending a “Server hello” message accompanied by the server’s random value.
+
+▪ The server sends its certificate to the client for authentication and may request the client’s certificate. The server sends the “Server hello done” message.
+
+▪ The client sends its certificate to the server, if requested. ▪ The client generates a random pre-master secret and encrypts it with the server’s public key; then, it sends the encrypted pre-master secret to the server.
+
+▪ The server receives the pre-master secret. Thereafter, the client and server each create the master secret and session keys based on the pre-master secret.
+
+▪ The client sends “Change cipher spec” to the server to indicate that it will start using the new session keys for hashing and encrypting messages. The client also sends “Clientfinished”
+
+
+▪ The server receives "Changecipher spec" from the client and switches its record layer security state to symmetric encryption using the session keys.
+
+Then, the server sends "Serverfinished" to the client.
+
+▪ Now, the client and server can exchange application data over the secure channel they have established, and all the messages exchanged between the client and server are encrypted using a session key
+
+
+Cryptography Toolkits 
+Cryptography toolkits include cryptographic primitives, algorithms, and schemes used to provide security for various applications. 
+
+Some cryptography toolkits are discussed below: 
+▪ OpenSSL Source: https://www.openssl.org OpenSSL is an open-source cryptography toolkit implementing the SSL and TLS network protocols and the related cryptography standards required by them. 
+
+It is a command-line tool for using the various cryptography functions of OpenSSL’s crypto-library from the shell. 
+
+OpenSSL can be used for the creation and management of private keys, public keys, and parameters; public-key cryptographic operations; creation of X.509 certificates, CSRs, and CRLs; etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
