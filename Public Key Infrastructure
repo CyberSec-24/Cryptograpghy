@@ -1,0 +1,76 @@
+PKI is a security architecture developed to increase the confidentiality of information exchanged over the insecure Internet. 
+
+It includes hardware, software, people, policies, and procedures required to create, manage, distribute, use, store, and revoke digital certificates. 
+
+In cryptography, the PKI helps to bind public keys with corresponding user identities by means of a certification authority (CA). 
+
+Components of PKI ▪ Certificate Management System: Generates, distributes, stores, and verifies certificates
+▪ Digital Certificates: Establishes credentials of a person when performing online transactions
+
+▪ Validation Authority (VA): Stores certificates (with their public keys) 
+
+▪ Certification Authority (CA): Issues and verifies digital certificates 
+
+▪ End User: Requests, manages, and uses certificates 
+
+▪ Registration Authority (RA): Acts as the verifier for the CA
+
+PKI is a comprehensive system that allows the use of public-key encryption and digital signature services across a wide variety of applications. 
+
+PKI authentication depends on digital certificates (also known as public-key certificates) that CAs sign and provide.
+
+A digital certificate is a digitally signed statement with a public key and the subject (user, company, or system) name in it. 
+
+PKI uses public-key cryptography, which is widely used on the Internet to encrypt messages or authenticate message senders.
+
+In public-key cryptography, a CA generates public and private keys with the same algorithm simultaneously.
+
+The subject keeps the private key secret and uses it to decrypt the text encrypted by someone else using the corresponding public key (available in a public directory). 
+
+Thus, others encrypt messages for the user with the user’s public key, and the user decrypts it with his/her private key
+
+
+
+Certification Authorities
+Certification authorities (CAs) are trusted entities that issue digital certificates. 
+
+The digital certificate certifies the possession of the public key by the subject (user, company, or system) specified in the certificate. 
+
+This aids others to trust signatures or statements made by the private key that is associated with the certified public key
+
+
+▪ Comodo 
+Source: https://www.comodoca.com 
+Comodo offers a range of PKI digital certificates with strong SSL encryption (128/256 available) with Server-Gated Cryptography (SGC). 
+
+It ensures standards of confidentiality, system reliability, and pertinent business practices as judged via qualified independent audits.
+
+It offers PKI management solutions such as Comodo Certificate Manager and Comodo EPKI Manager
+
+
+▪ IdenTrust
+Source: https://www.identrust.com
+IdenTrust is a trusted third party that provides CA services for many sectors such as banks, corporates, governments, and healthcare. 
+
+It provides solutions such as digital signing and sealing, compliance with NIST SP 800-171, global identity networks, and managed PKI hosting services
+
+
+
+▪ DigiCert CertCentral 
+Source: https://www.digicert.com
+CertCentral simplifies the entire lifecycle by consolidating tasks for issuing, installing, inspecting, remediating, and renewing TLS/SSL certificates. 
+
+It manages high-volume TLS/SSL certificate issuance for multiple individuals and teams
+
+
+
+▪ GoDaddy 
+Source: https://www.godaddy.com
+GoDaddy SSL Certificates offer a complete range of certificates that comply with CA/Browser Forum guidelines. 
+
+They provide the SHA-2 hash algorithm and 2048-bit encryption, protection of unlimited servers, etc
+
+
+
+
+
