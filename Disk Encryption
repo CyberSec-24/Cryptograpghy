@@ -1,0 +1,85 @@
+Disk encryption encrypts every bit of data stored on a disk or a disk volume, thus preventing illegal access to data storage.
+
+Disk encryption is a technology that protects the confidentiality of the data stored on a disk by converting it into an unreadable code using disk encryption software or hardware, thus preventing unauthorized users from accessing it.
+
+Disk encryption provides confidentiality and privacy using passphrases and hidden volumes.
+
+Disk encryption works similarly to text-message encryption and protects data even when the OS is not active.
+
+By using an encryption program for one’s disk (USB flash drive, external HDD, backup), one can safeguard any or all information on the disk and prevent it from falling into the wrong hands. 
+
+Disk-encryption software scrambles the information on the disk into an illegible code.
+
+It is only after decryption of the disk information that one can read and use it. Disk encryption is useful when the user needs to physically send sensitive information. 
+
+In addition, disk encryption can protect the real-time exchange of information from compromising threats.
+
+When users exchange encrypted information, the chances of compromising the information are minimized. 
+
+The only way an attacker can access the information is by decrypting the message. Furthermore, encryption software installed on a user’s system ensures the security of the system. 
+
+Install encryption software on any system that holds valuable information or systems that are exposed to unlimited data transfer
+
+
+Disk Encryption Tools 
+The common goal of disk encryption tools is to encrypt a disk partition to provide confidentiality to the information stored on it.
+
+Some disk encryption tools are discussed below. 
+▪ VeraCrypt Source: https://veracrypt.fr VeraCrypt is software for establishing and maintaining an on-the-fly-encrypted volume (data storage device).
+
+In on-the-fly encryption, data are automatically encrypted immediately before saving and decrypted immediately after loading, without any user intervention. 
+
+No data stored on an encrypted volume can be read (decrypted) without using the correct password/keyfile(s) or correct encryption keys. 
+
+The entire file system is encrypted (e.g., file names, folder names, free space, metadata, etc.).
+
+Files can be copied to and from a mounted VeraCrypt volume just like they are copied to/from any normal disk (e.g., by simple drag-and-drop operations).
+
+Files are automatically decrypted on the fly (in memory/RAM) while they are read or copied from an encrypted VeraCrypt volume. 
+
+Similarly, files that are written or copied to the VeraCrypt volume are automatically encrypted on the fly (just before they are written to the disk) in RAM
+
+
+ Rohos Disk Encryption 
+Source: https://rohos.com
+
+Rohos is a disk encryption tool that allows users to create hidden and encrypted partitions on a computer, USB flash drive, or cloud storage service such as Google Drive, OneDrive, and Dropbox. 
+
+The tool uses the NIST-approved AES encryption algorithm and an encryption key length of 256 bits, which enables automatic encryption
+
+
+
+▪ BitLocker Drive Encryption
+Source: https://www.microsoft.com
+
+BitLocker provides offline-data and OS protection for your computer. 
+
+It helps ensure that data that is stored on a computer that is running Windows® is not revealed if the computer is tampered with when the installed OS is offline.
+
+BitLocker uses a microchip that is called a Trusted Platform Module (TPM) to provide enhanced protection for your data and to preserve early boot-component integrity. 
+
+The TPM can help protect your data from theft or unauthorized access by encrypting the entire Windows volume.
+
+
+
+Disk Encryption Tools for Linux 
+
+▪ Cryptsetup 
+Source: https://gitlab.com
+
+Cryptsetup is a utility used to conveniently set up disk encryption based on the DMCrypt kernel module. 
+
+It includes plain dm-crypt volumes, LUKS volumes, loop-AES, TrueCrypt (including the VeraCrypt extension), and BitLocker formats
+
+
+
+Disk Encryption Tools for macOS 
+▪ FileVault Source: https://support.apple.com 
+
+FileVault utilizes the XTS-AES-128 encryption technology along with a 256-bit key to prevent unauthorized access to the information on the startup disk. 
+
+FileVault is available for macOS Lion or higher versions. After turning on FileVault, the user must log in with their account. 
+
+Soon after turning on FileVault, the encryption process is automatically initiated in the background. 
+
+The files are encrypted as soon as they are created because they are stored in the startup disk.
