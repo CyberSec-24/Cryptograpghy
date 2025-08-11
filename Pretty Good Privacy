@@ -1,0 +1,45 @@
+Pretty Good Privacy (PGP) is a protocol used to encrypt and decrypt data with authentication and cryptographic privacy.
+
+It is often used for data compression, digital signing, encryption and decryption of messages, emails, files, and directories, and to enhance the privacy of email communications. 
+
+The algorithm used for message encryption is RSA for key transport and IDEA for bulk-message encryption. 
+
+PGP uses RSA for computing digital signatures and MD5 for computing message digests. 
+
+It combines the best features of both conventional (around 1,000 times faster than public-key encryption) and
+public-key cryptography (solution to key distribution and data transmission issues) and is thereby, known as a hybrid cryptosystem
+
+
+▪ PGP Encryption
+o When a user encrypts data with PGP, PGP first compresses the data.
+
+Compressing the data reduces patterns in the plaintext that could be exploited by most cryptanalysis techniques to crack the cipher, thereby increasing the resistance to cryptanalysis considerably.
+
+o PGP then creates a random key (GSkAQk49fPD2h) that is a one-time-only secret key.
+
+o PGP uses the random key generated to encrypt the plaintext, resulting in a ciphertext. 
+
+o Once the data is encrypted, a random key is encrypted with the recipient’s public key.
+
+o The public-key-encrypted random key (Td7YuEkLg99Qd0) is sent along with the ciphertext to the recipient.
+
+
+
+ PGP Decryption 
+o Decryption works in reverse.
+
+o The recipient’s copy of PGP uses his or her private key instead of the public key to recover the temporary random key.
+
+o PGP then uses the recovered random key to decrypt the conventionally encrypted ciphertext
+
+
+
+
+
+
+
+
+
+
+
+
