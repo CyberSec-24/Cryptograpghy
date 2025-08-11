@@ -1,0 +1,72 @@
+A blockchain is a type of distributed ledger technology (DLT) that is used to record and store the history of transactions securely in the form of blocks.
+
+Data recorded in blockchains is resistant to unwanted modifications, and account transparency is maintained through cryptographic techniques.
+
+For multiple transactions, multiple blocks are created, which are cryptographically linked together to form a “blockchain.” 
+
+This chain of records or blocks are known as ledgers, which are shared in the network to make other participants aware of all the transaction details and the number of bits owned by each member. 
+
+The members in the network authenticate blocks using their hash values, and the hashes are further validated by crypto miners using complex cryptographic algorithms, 
+following which, the blocks are approved to join the blockchain mechanism.
+
+Blockchains are generally implemented using two mechanisms: hash functions (mostly SHA-256) and asymmetric key algorithms. 
+
+The process of validating blocks is known as “proof of work,” for which crypto miners are compensated, and the process of adding blocks to a blockchain after performing “proof of work” is referred to as “crypto mining.”
+
+Each block in a blockchain consists of three elements: data (transaction details), hash, and the hash of the previous block. 
+
+Every time a new block is created using a new hash value, the hash value is shared with the next block. 
+
+The first block in a blockchain referred to as the genesis and is represented by 0s. Once a block verifies its previous block’s hash, it is allowed to join the blockchain.
+
+If a block is tampered with, the next block in the chain invalidates it because it does not match the previous hash value in the current block.
+
+However, a blockchain is not completely protected by merely generating hashes and comparing them with other blocks. 
+
+Attackers can generate valid hashes for each block using many cryptographic techniques. The “proof of work” mechanism is used, as described above, to mitigate such risks.
+
+The security of the blockchain is ensured by both the effective usage of hashes and the “proof of work” by miners (on public ledgers)
+
+
+
+Thus, each member has the details of the new transaction.
+
+Blockchains can be created in four variants, each of which serves a different purpose. 
+
+▪ Public ledger or public blockchain:
+This type of blockchain has no central authority or administration to manage the blocks or ledgers. 
+
+It is a decentralized and permission-less network in which anyone can join, create, and share blocks. 
+
+Once the data on the blockchain have been validated, it is secure from modifications or alterations. Some examples of public blockchains include Bitcoin and Ethereum
+
+
+ Private ledger or private blockchain:
+In this type of blockchain, a supervisor or central authority decides who can join and participate in the blockchain network.
+
+In a private ledger, only the members involved in a transaction will have knowledge about the corresponding ledgers.
+
+Some examples of private blockchains are Hyperledger and Ripple (XRP).
+
+
+▪ Federated blockchain or consortium blockchain:
+It is a partially decentralized blockchain in which a group of individuals or organizations, rather than a single entity as in private blockchains, create and manage separate blockchain networks.
+
+Control over the blockchain is provided to a group of predetermined or trusted nodes.
+
+Participants in a consortium blockchain are mostly from government organizations or central banks. 
+
+This type of blockchain is extremely fast and scalable. EWF (Energy) and R3 (banks) are instances of federated blockchains.
+
+
+▪ Hybrid blockchain: 
+It is a combination of both private and public blockchain. 
+
+In a hybrid blockchain, only a selected set of records or data from the blockchain can be publicly accessed; the remaining data are kept confidential in a private network.
+
+This type of blockchain enables organizations to select which data they wish to make public private. One important example of a hybrid blockchain is the IBM Food Trust
+
+
+
+
+
