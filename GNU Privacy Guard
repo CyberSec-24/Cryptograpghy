@@ -1,0 +1,37 @@
+GNU Privacy Guard (GPG) is a software replacement of PGP and free implementation of the OpenPGP standard that is used to encrypt and decrypt data. 
+
+GPG is also called a hybrid encryption software program, as it uses both symmetric-key cryptography and asymmetric-key cryptography for improved speed and secure key exchange, which is achieved using the receiver’s public key for encrypting the session key.
+
+GPG also supports S/MIME and Secure Shell (SSH). 
+
+The latest version of GPG supports most cryptographic functions such as elliptic curve cryptography (ECDSA, ECDH, and EdDSA), and it also supports the cryptography library Libgcrypt
+
+
+
+▪ GPG Encryption
+o GPG encrypts messages individually by using asymmetric-key pairs.
+
+o The user sends the raw file, and GPG is used for signing the file using the sender’s private key for confirming the file content at the time of signing.
+
+o Then, the file is encrypted using the receiver’s public key. Now, the file can be decrypted only with the receiver’s private key.
+
+o After encrypting the data, the encrypted file can be stored locally, distributed to the FTP servers, or sent to email recipients
+
+
+
+▪ GPG Decryption 
+o GPG decryption is the reverse process of GPG encryption.
+
+o As the asymmetric-key pairs are used, GPG searches for the receiver’s private key for decrypting the file.
+
+o Signature verification is done automatically by the GPG using the sender’s public key after the decryption
+
+
+
+
+
+
+
+
+
+
