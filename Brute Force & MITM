@@ -1,0 +1,48 @@
+Brute-forcing VeraCrypt encryption is an attack technique in which attackers attempt to decrypt the encrypted data. 
+
+Attackers use the dd command to extract the hash value from the encrypted container, and the hashcat or 
+
+John the Ripper tool to brute-force the password by attempting different password combinations until the key used for encryption is discovered
+
+
+▪ Extract VeraCrypt Hash 
+Run the following command is run to extract the first 512 bytes of the hash value from the encrypted container and save it in a .tc extension file:
+
+dd.exe if=<path_to_container> of=<path_to_hashfile.tc> bs=512 count=1
+
+
+▪ Crack the Hash value using hashcat 
+Run the following command for brute-forcing a 4-digit numeric password: 
+
+hashcat.exe -a 3 -w 1 -m 13721 <path_to_hashfile.tc> ?d?d?d?d 
+
+o a: Brute-force attack mode 
+o -w: Workload profile (low to high: 1-4) 
+o -m: Decryption mode o 13721: Decryption code 
+o ?d?d?d?d: Running hashcat with masks (each ?d indicates a numeric value 0-9)
+
+▪ Additionally, attackers can use the following command for brute forcing with a 
+wordlist.txt file containing default passwords: hashcat.exe -w 1 -m 13721 hash.tc wordlist.txt
+
+
+
+In the meet-in-the-middle attack, the attacker uses a known plaintext message. The attacker has access to both the plaintext as well as the respective encrypted text. 
+
+This attack is performed by attackers for forging messages that use multiple encryption schemes. 
+
+Consider an example where the plaintext is “John,” and the resulting double-DES-encrypted message is “AvBr.” 
+
+To recover both the keys (i.e., key1 and key2) used for encryption, the attacker performs a brute-force attack on key1 using all the 256 different single DES possible keys to encrypt the plaintext of “John” and saves each key and the resulting intermediate ciphertext in a table.
+
+The attacker brute-forces key2 and decrypts “AvBr” up to 256 times. 
+
+The attack is successful when the second brute-force attack gives the same result as the intermediate ciphertext present in the ciphertext table after the first brute-force attack.
+
+Once the attacker finds a match, he/she can determine both keys and complete the attack. 
+
+At most, this attack takes 256 or a maximum of 257 total operations. This enables the attacker to gain access to the data easily compared with double DES
+
+
+
+
+
