@@ -1,0 +1,102 @@
+1. Quantum Cryptanalysis Attack
+Quantum cryptanalysis attacks leverage quantum-computing techniques to compromise cryptographic systems that can withstand classical attacks.
+
+Quantum algorithms, such as Shor's and Grover's, allow attackers to break current encryption methods, jeopardizing the confidentiality and integrity of sensitive information.
+
+In addition, these algorithms allow attackers to forge digital signatures, thereby undermining the authenticity of electronic communications and transactions.
+
+2. Quantum Side-Channel Attack
+Quantum side-channel attacks exploit information leakage from the physical implementation of quantum cryptographic systems to gather information from quantum computers without directly attacking the algorithms.
+
+By analyzing indirect vulnerabilities such as quantum noise, error rates, timing, power consumption, and electromagnetic emissions during quantum computations or key exchanges, attackers can infer sensitive information, including cryptographic keys
+
+
+3. Classical-to-Quantum Transition Attack
+Classical-to-quantum transition attacks exploit vulnerabilities that arise during the transition from classical cryptographic systems to quantum-resistant systems. 
+
+During this period, hybrid systems that combine classical and quantum cryptography may exhibit weaknesses or interoperability issues.
+
+Attackers target these transitional systems to compromise security, intercept communication, and extract sensitive information before robust quantum-resistant protocols are fully implemented and standardized
+
+
+4. Harvest-Now, Decrypt-Later Attack
+The Harvest-Now, Decrypt-Later attack involves intercepting and storing encrypted data today with the intention of breaking the encryption in the future once quantum computers become powerful enough to defeat current encryption algorithms. 
+
+Attackers capture large volumes of sensitive encrypted data from the Internet or secure communications, expecting that future quantum computing capabilities will allow them to decrypt this information, thereby compromising long-term confidentiality and security
+
+
+5. Quantum Trojan Horse Attack
+Quantum Trojan horse attacks involve embedding malicious quantum devices or components in a quantum cryptographic system.
+
+These malicious elements can covertly gather and transmit sensitive information to attackers. 
+
+By exploiting these hidden vulnerabilities, attackers can bypass the security of quantum cryptographic protocols, potentially compromising the integrity and confidentiality of the entire system without directly breaking quantum algorithms.
+
+
+6. Quantum Supply Chain Attack
+Quantum supply chain attacks target the quantum-computing hardware and software supply chains. 
+
+This type of attack involves tampering with components, software, or firmware at any point in the supply chain before deployment in a quantum system. 
+
+The goal is to introduce vulnerabilities or backdoors that can be exploited later to compromise the security and integrity of a quantum system. 
+
+These include the addition of malicious quantum circuits or states to quantum communication systems or algorithms to create exploitable weaknesses
+
+
+7. Quantum-Computer Sabotage Attack
+Quantum-computer sabotage attacks involve direct physical or cyberactions aimed at disrupting or destroying quantum-computer operations.
+
+This can include physically damaging the hardware to cause malfunctions, potentially affecting critical applications, and research that relies on advanced computational capabilities. 
+
+Such attacks can significantly hinder the progress and deployment of quantum-computing technologies.
+
+
+8. Fault-Injection Attack on Quantum Hardware
+Fault-injection attacks on quantum hardware involve deliberately embedding errors or faults into a quantum system to interrupt its workflow and compromise security.
+
+This type of attack is performed by manipulating environmental conditions, such as temperature and electromagnetic fields, or exploiting vulnerabilities in the quantum hardware design. 
+
+By inducing faults, attackers can alter quantum states or computational processes, potentially leading to incorrect results or revealing sensitive information
+
+
+
+9. Quantum Denial-of-Service (DoS) Attack 
+
+Quantum denial-of-service (DoS) attacks involve flooding a quantum computer or quantum network with a high volume of requests, overloading processing capabilities, or exploiting specific vulnerabilities in quantum algorithms and hardware.
+
+The goal is to render a quantum system inaccessible or to significantly degrade its performance, thereby preventing legitimate users from executing quantum computations.
+
+
+10. Quantum Data Eavesdropping
+Quantum data eavesdropping attacks involve intercepting and analyzing the transmission of quantum data to gain unauthorized access to sensitive information. 
+
+In this type of attack, adversaries exploit vulnerabilities in quantum communication channels such as those used in quantum key distribution (QKD). 
+
+By measuring the transmitted quantum states, attackers can attempt to reconstruct the data or keys being exchanged, thereby posing a significant threat to the security of quantum communication
+
+
+
+11. Quantum Bit-Flipping Attack 
+Quantum bit-flipping attacks involve deliberately changing the state of qubits within a quantum system to disrupt its normal operation and compromise the integrity of the computations.
+
+In this attack, an adversary manipulates the qubits by flipping their states from 0 to 1, or vice versa.
+
+This can lead to incorrect results in quantum computations or can corrupt the information being processed, thereby posing a significant threat to the reliability and security of quantum systems.
+
+
+12. Quantum Error Correction Mechanism Exploitation
+Quantum error correction mechanism exploitation involves attackers exploiting vulnerabilities in error-correction protocols in quantum computing systems to introduce undetected errors that compromise the reliability of quantum computations and potentially extract sensitive information.
+
+This can be achieved by sending tailored error patterns that error correction algorithms cannot effectively handle, leading to computational failures
+
+
+13. Quantum Replay Attack
+Quantum Replay Attack involves the interception and retransmission of quantum communication signals to deceive the receiver and accept them as legitimate. 
+
+In such attacks, adversaries capture quantum data or quantum key distribution (QKD) transmissions and replay them to trick the system into thinking that the data are original and valid.
+
+This can lead to unauthorized access, data breaches, or compromises of the cryptographic keys.
+
+
+
+
