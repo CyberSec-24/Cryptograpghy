@@ -1,0 +1,114 @@
+▪ 51% Attack
+A 51% attack, also known as a majority attack, occurs when an attacker or group of attackers gains control of more than 50% of the computational power (hash rate) or stacking power in a blockchain network.
+
+This level of control allows them to manipulate the blockchain by conducting double-spending attacks, denial-of-service (DoS) attacks, transaction reversals, and other malicious activities. 
+
+Attackers often target less-secure or smaller blockchain networks, where achieving majority control is easier
+
+
+o Step 1: The attacker obtains control of 51% or more of the total mining power of the blockchain network.
+
+This can be achieved by renting additional mining power, purchasing sophisticated hardware resources, or persuading a significant number of miners to join a pool managed by an attacker
+
+o Step 2: The attacker isolates the mining pool from the network and continues mining on a private blockchain, keeping their progress hidden from the main network.
+
+o Step 3: Attacker extends their private blockchain by adding more blocks to it.
+
+o Step 4: Once the private chain becomes longer than the public chain, the attacker releases it into the main network.
+
+o Step 5: The main network recognizes the longer chain as a valid chain, which invalidates the transaction in the shorter public chain, allowing the attacker to maintain control over all transactions in the entire network
+
+
+
+▪ Finney Attack
+A Finney attack is a type of blockchain attack that involves an attacker leveraging the time delays between the broadcasting and confirmation of transactions in cryptocurrency networks to reverse the transactions before they are confirmed. 
+
+This type of attack primarily targets merchants and service providers who accept cryptocurrency payments, particularly those who do not wait for multiple confirmations before finalizing a transaction.
+
+Attackers perform this attack to double-spend cryptocurrency, effectively obtaining goods or services for free while retaining their coins.
+
+o Step 1:
+The attacker premines a block that includes a transaction sending coins to themselves or another address they control, but does not immediately broadcast it to the network.
+
+o Step 2: The attacker initiates a transaction with the victim for goods or services and sends them the same coins used in the pre-mined block.
+
+o Step 3: Immediately after the victim accepts the transaction, the attacker broadcasts a predetermined block to the network.
+
+o Step 4: Nodes in the network validate the predetermined block and its transactions. 
+As this block contains the same coins sent to the attacker’s address, it conflicts with the transaction sent to the victim.
+
+o Step 5: If the pre-mined block is accepted before the victim's transaction is confirmed, the attacker's transaction becomes valid, thus reversing the victim's transaction.
+The attacker retains both the goods/services and coins, causing the victim to lose out
+
+
+
+▪ Eclipse Attack
+An Eclipse attack is a type of blockchain attack in which an attacker isolates a target node from the rest of the network by surrounding it with malicious nodes, thereby effectively controlling the node's view of the blockchain. 
+
+This type of attack primarily targets the nodes that accept incoming connections. 
+
+Isolating the target node from the blockchain network allows the attacker to manipulate the target node's perception of the network, which can be exploited for various malicious purposes such as disrupting transaction processing, splitting mining power, and facilitating double‐spending attacks.
+
+Various steps performed by an attacker in an Eclipse attack are given below:
+o Step 1: The attacker fills the target node’s peer tables with its own IP addresses so that the target node connects only to the attacker nodes.
+
+o Step 2: Upon manipulating the peer tables, the attacker forces the target node to restart, typically by launching a DoS attack
+
+o Step 3: During the restart, the node disconnects from all legitimate nodes in the network.
+
+o Step 4: Following the restart, the targeted node looks at its peer tables for new connections and unknowingly connects to the attacker nodes.
+
+o Step 5: The target node is isolated from legitimate network participants and its inbound and outbound connections are redirected to the attacker nodes
+
+
+
+▪ Race Attack
+A race attack is a double‐spending attack that exploits the delay in transaction confirmation in blockchain networks to obtain goods or services without actually paying for them and effectively spends the same coin twice.
+
+This attack is similar to the Finney attack, but does not require the attacker to pre‐mine blocks to reverse the victim’s transaction.
+
+It relies on an attacker’s ability to broadcast transactions quickly and exploit a network’s latency. 
+
+Because mempool contains unconfirmed transactions, they can be manipulated by broadcasting multiple conflicting transactions in quick succession.
+
+Race attacks primarily target victims who accept zero‐confirmation transactions.
+
+Attackers perform the following steps to launch a race attack on a target service provider: 
+
+o Step 1: The attacker creates two transactions using the same coin: one for the victim (Transaction A) and one for his own address (Transaction B)
+
+o Step 2: The attacker broadcasts Transaction A to the victim and the network, ensuring that the victim sees this transaction.
+(The victim generally accepts the transaction and provides goods or services based on a zero‐confirmation transaction.)
+
+o Step 3: Immediately, the attacker broadcasts Transaction B to the network in the hope that Transaction B will be confirmed before Transaction A.
+[Here, both transactions (Transaction A and Transaction B) will be in a race to be confirmed by the network. 
+As both transactions use the same inputs, only one can be included in the blockchain.]
+
+o Step 4: If Transaction B is confirmed first, Transaction A is invalidated, allowing the attacker to retain both goods/services and cryptocurrencies
+
+
+
+▪ DeFi Sandwich Attack
+A decentralized finance (DeFi) sandwich attack is a blockchain attack targeting decentralized exchanges (DEXs) and automated market makers (AMMs) to manipulate market dynamics. 
+
+In this attack, the attacker exploits the time delay and order execution mechanisms in the DEXs to manipulate the price of a token to their advantage.
+
+This attack targets tokens with significantly larger transactions. 
+
+Sandwich attacks can cause victims to buy tokens at inflated prices or sell them at deflated prices, leading to financial losses.
+
+The following are the various steps an attacker performs in a DeFi sandwich attack:
+o Step 1: The attacker searches the mempool and finds a large pending transaction that is likely to raise the market price of the token.
+
+o Step 2: The attacker places a buy order for the same token immediately before the victim's transaction to increase the price of the token.
+
+o Step 3: Next, the victim's transaction is executed, buying the token at an inflated price caused by the attacker's front‐running buy order.
+
+o Step 4: Immediately after the victim's transaction is executed, the attacker places a sell order for the same token by exploiting the price increase caused by the victim's buy order.
+
+o Step 5: The attacker profits by buying the token at a lower price before the victim's transaction and selling it at a higher price
+
+
+
+
+
