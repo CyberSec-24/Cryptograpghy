@@ -1,0 +1,52 @@
+DHUK Attack
+Don't Use Hard-Coded Keys (DUHK) is a cryptographic vulnerability that allows attackers to obtain encryption keys used to secure VPNs and web sessions. 
+
+This attack mainly affects any hardware/software using the ANSI X9.31 Random Number Generator (RNG). 
+
+Pseudorandom number generators (PRNGs) generate random sequences of bits based on the initial secret value, called seed, and the current state. 
+
+The PRNG algorithm generates cryptographic keys that are used to establish a secure communication channel over the VPN.
+
+In some cases, the seed key is hardcoded into the implementation.
+
+Both the factors are key issues of the DUHK attack, as any attacker can combine ANSI X9.31 with the hard-coded seed key to decrypt the encrypted data sent or received by that device.
+
+Man-in-the-middle attackers use the DUHK attack to learn the seed value, observe the current session, and obtain the current state value. 
+
+Using this attack, attackers can identify encryption keys and steal confidential information such as critical business data, user credentials, and credit card details
+
+
+DROWN Attack
+Decrypting RSA with Obsolete and Weakened eNcryption (DROWN) is a grave vulnerability that can affect important cryptographic protocols such as HTTPS and other cryptographic services that depend on SSL and TSL.
+
+The DROWN attack is a cross-protocol weakness that can communicate and initiate an attack on servers supporting recent SSLv3/TLS protocol suites.
+
+It is a new form of cross-protocol Bleichenbacher padding oracle attack. 
+
+The server is critically vulnerable to the DROWN attack if ▪ The server permits SSLv2 connection, which is mostly caused by a misconfiguration or incorrect default settings.
+
+▪ The same private key certificate is used on a different server that allows SSLv2 connection, and it also makes the TLS server vulnerable, as the SSLv2 server can leak the key information.
+
+The DROWN attack allows the attacker to decrypt the latest TLS connection between the victim client and the server by launching malicious SSLv2 probes using the same private key.
+
+Using this attack, the attacker can also force the victim client and server to use the RSA key exchange. 
+
+Thus, the attacker can disrupt connections among the latest browsers and servers that favor the use of latest techniques, i.e., perfect-forward-secret key exchange, such as DHE and ECDH
+
+Attackers perform the DROWN attack as part of an online man-in-the-middle (MITM) attack, breaking encrypted keys, sniffing or stealing sensitive information such as passwords and bank account details, and accessing personal emails or messages.
+
+By performing this attack, the attacker can also masquerade as a secure website and thus seize or change the website contents
+
+
+
+
+
+
+
+
+
+
+
+
+
+
