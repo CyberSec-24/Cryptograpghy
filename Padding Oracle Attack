@@ -1,0 +1,59 @@
+Related-Key Attack Attackers launch a related-key attack by exploiting the mathematical relationship between the keys in a cipher and gain access to encryption and decryption functions.
+
+The attacker’s motive for launching this attack is to find the related private/secret keys. 
+
+To implement this attack, the attacker monitors the cipher operation where key values are initially unknown;
+then, the attacker captures the relation between those keys after a thorough examination. 
+
+For instance, the attacker observes and finds that the last 80 bits of the keys are same at all times, but he/she does not initially know about these bits
+
+The failure in the WEP cryptogram, i.e., when used in wireless networks, is the best example of this attack. 
+
+In this attack, each AP and user interface device uses the same key. 
+
+The encryption used in WEP is a stream cipher known as RC4; it is important to note that the same keys should not be repeated in the stream cipher. 
+
+To avoid this, WEP integrates a 24-bit initial vector (IV) in every packet transferred. 
+
+The RC4 key for that particular packet is the IV associated with the WEP key. WEP keys need to be changed manually, however, this is rarely done.
+
+Hence, the attacker notices that the keys used for encryption are often the same. 
+
+This drawback poses various risks on WEP, especially using the birthday paradox, because for every 4096 packets, two parties will share the same IV and hence the same RC4 key. 
+
+This simple form of encryption allows the attacker to leverage weak RC4 keys, which ultimately forces the recovery of the WEP key.
+
+
+
+Padding Oracle Attack In a padding oracle attack, the attackers exploit the padding validation of an encrypted message to decipher the ciphertext.
+
+Such an attack is also known as a Vaudenay attack. In many cryptographic algorithms based on a block cipher, 
+the messages are padded with additional random bits so that the length of the last block is of the required size.
+
+Padding oracle is a function of such encryption that verifies if a message was correctly padded. 
+
+This attack is mainly performed on algorithms that operate in the CBC (Cipher Block Chaining) mode. 
+
+In this attack, the server (oracle) reveals information about whether the padding of an encrypted message was correctly done.
+
+In some cases, this information allows attackers to decrypt and optionally encrypt messages using the server’s key (oracle’s key) without having access to the corresponding encryption key. 
+
+For example, consider a scenario with a standard implementation of CBC decryption. 
+
+The server decrypts all the ciphertext blocks, verifies the padding, removes all the additional padding done during the encryption process, and then returns the original message to the application or user.
+
+If, for example, the server is unable to decrypt the message due to a padding error and returns an error message “Decryption failure: Invalid Padding” instead of a generic message “Decryption failed”, this information can be exploited by an attacker. 
+
+The attacker can use the server as a padding oracle to decipher the encrypted messages
+
+
+
+
+
+
+
+
+
+
+
+
