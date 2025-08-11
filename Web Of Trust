@@ -1,0 +1,26 @@
+Web of trust (WoT) is a trust model of PGP, OpenPGP, and GnuPG accessible systems. It is an idea of decentralizing the key distribution among PGP users. 
+
+In the PKI, only centralized power such as the CA signs certificates in the network, ensuring authenticity between the public key and its owner. 
+
+In WoT, everyone in the network is a CA, and they can sign for other trusted entities. 
+
+WoT is a network chain in which individuals intermediately validate each other’s certificates using their signatures.
+
+These signatures verify the ownership of keys from various trust levels. 
+
+There is a bunch of similar trust levels through direct or indirect references in WoT
+
+
+Working of WOT 
+In WOT, every PGP user in the network has a ring of public keys to encrypt the data, and they introduce many other users whom they trust. 
+
+In this trust model, a user encodes the data with the receiver’s public key that is decrypted only by the receiver’s private key.
+
+Then, every user in this model digitally signs the data with their private keys; when the recipient is validating it against the user’s public key, he/she can confirm the user’s authenticity. 
+
+This process will ensure that data are received from a valid user without being modified, and only the intended user can access the information, as only he/she holds the related private key
+
+
+
+
+
