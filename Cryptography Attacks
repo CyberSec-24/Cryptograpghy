@@ -1,0 +1,127 @@
+ Ciphertext-only Attack Ciphertext-only is less effective but much more likely for the attacker. 
+
+The attacker only has access to a collection of ciphertexts. This is much more likely than known plaintext but is also the most difficult.
+
+The attack is completely successful if the corresponding plaintexts (or even better, the key) can be deduced. 
+
+The ability to obtain any information at all about the underlying plaintext is still considered a success. 
+
+So what does the attacker do with the ciphertexts he/she has accumulated? You can analyze them for patterns, trying to find something that would give you a hint as to the key that was used to crack them. 
+
+Often, the result of this attack is just a partial break and not a complete break.
+
+▪ Adaptive Chosen-plaintext Attack
+In this type of attack, an attacker has complete access to the plaintext message including its encryption, 
+
+and he/she can also modify the content of the message by making a series of interactive queries,
+
+choosing subsequent plaintext blocks based on the information from the previous encryption queries and functions. 
+
+To perform this attack, an attacker needs to interact with the encryption device
+
+
+▪ Chosen-plaintext Attack
+A chosen plaintext attack is a highly effective type of cryptanalysis attack. 
+
+In this attack, the attacker obtains the ciphertexts corresponding to a set of plaintexts of his/her own choosing. 
+
+This allows the attacker to attempt to derive the key used and thus decrypt other messages encrypted with that key. 
+
+Basically, since the attacker knows the plaintext and the resultant ciphertext, he/she gains many insights into the key used.
+
+This technique can be difficult but is not impossible.
+
+
+▪ Related-Key Attack
+The related-key attack is similar to the chosen plaintext attack, except that the attacker can obtain ciphertexts encrypted under two different keys. 
+
+This is actually a very useful attack if you can obtain the plaintext and matching ciphertext. 
+
+The attack requires that the differing keys be closely related, e.g., in a wireless environment where subsequent keys might be derived from previous keys.
+
+Then, while the keys are different, they are close. 
+
+Much like the ciphertext-only attack, this type of attack is most likely only going to yield a partial break
+
+
+
+▪ Dictionary Attack
+In this attack, the attacker constructs a dictionary of plaintext along with its corresponding ciphertext that he/she has analyzed and obtained for a certain period of time. 
+
+After building the dictionary, if the attacker obtains the ciphertext, he/she uses the already built dictionary to find the corresponding plaintext. 
+
+Attackers use this technique to decrypt keys, passwords, passphrases, and ciphertext
+
+
+
+▪ Known-plaintext Attack
+In this attack, the only information available to the attacker is some plaintext blocks along with the corresponding ciphertext and algorithm used to encrypt and decrypt the text. 
+
+Using this information, the key used to generate the ciphertext is deduced so as to decipher other messages.
+
+This attack works on block ciphers and is an example of linear cryptanalysis. 
+
+The known plaintext blocks are generated using a series of intelligent guesses and logic, and not by accessing the plaintext over a channel.
+
+
+▪ Chosen-ciphertext Attack
+The attacker obtains the plaintexts corresponding to an arbitrary set of ciphertexts of his own choosing. 
+
+Using this information, the attacker tries to recover the key used to encrypt the plaintext. 
+
+To perform this attack, the attacker must have access to the communication channel between the sender and the receiver.
+
+There are two variants of this attack: 
+
+o Lunchtime or Midnight Attack:
+In this attack, the attacker can have access to the system for only a limited amount of time or can access only a few plaintext-ciphertext pairs.
+
+o Adaptive Chosen-ciphertext Attack:
+In this attack, the attacker selects a series of ciphertexts and then observes the resulting plaintext blocks
+
+
+▪ Rubber Hose Attack 
+Attackers extract cryptographic secrets (e.g., the password to an encrypted file) from a person by coercion or torture. 
+
+In general, people under pressure cannot maintain security, and they will reveal secrets or hidden information. 
+
+Attackers torture victims to reveal secret keys or passwords used to encrypt the information.
+
+
+▪ Chosen-key Attack 
+In this type of attack, an attacker not only breaks a ciphertext but also breaks into a larger system, which is dependent of that ciphertext.
+
+The attacker usually breaks an n-bit key cipher into 2 n/2 operations.
+
+Once an attacker breaks the cipher, he gets access to the system, and he can control the whole system, access confidential data, and perform further attacks.
+
+
+▪ Timing Attack
+It is based on repeatedly measuring the exact execution times of modular exponentiation operations.
+
+The attacker tries to break the ciphertext by analyzing the time taken to execute the encryption and decryption algorithm for various inputs.
+
+In a computer, the time taken to execute a logical operation may vary based on the input given. An attacker tries to extract the plaintext by giving varying inputs
+
+
+▪ Man-in-the-Middle Attack
+This attack is performed against a cryptographic protocol. Here, an attacker intercepts the communication between a client and a server and negotiates the cryptographic parameters.
+
+Using this attack, an attacker can decrypt the encrypted content and obtain confidential information such as system passwords.
+
+An attacker can also inject commands that can modify the data in transit. 
+
+The attacker usually performs an MITM attack on public-key cryptosystems where key exchange is required before communication takes place
+
+
+
+
+
+
+
+
+
+
+
+
+
